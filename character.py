@@ -7,13 +7,14 @@ class init:
         possition.y = 0
         possition.x_ = 0
         possition.y_ = 0
-        self.x = 0
-        self.y = 0
-        self.size =size
+        possition.direction = 0
+        self.x = possition.x
+        self.y = possition.y
+        self.size =size # I think that shouldwork
 class draw:
     def __init__(self,window,size):
         pygame.draw.rect(window,(0,0,0),(possition.x,possition.y,size,size))
-        pygame.display.update()
+        #pygame.display.update()
 class MOVE:
     def update():
         if abs(possition.x_) + abs(possition.y_) ==3:
