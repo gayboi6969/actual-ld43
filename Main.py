@@ -2,10 +2,12 @@ import pygame
 import gamedisplay
 import character as Character
 import tiles
+import MusicHandler
 tiles.tiles()
 character = Character.init(10)
 displayOS = gamedisplay.init()
 tiless = [[20,20],[60,20],[100,20],[140,20],[140,60],[20,100],[60,100],[100,100],[140,100],[800,100]]
+MusicHandler.menu.play()
 while True:
     displayOS.clock.tick(128)
     for event in pygame.event.get():

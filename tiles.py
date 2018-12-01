@@ -17,13 +17,13 @@ class tiles:
         for z in tiless:
             if 295> z[0]-Character.possition.x-10 and 295< z[0]-Character.possition.x+40 and 295> z[1]-Character.possition.y-10 and 295< z[1]-Character.possition.y+40:
                 if direction ==0:
-                    output = "0|-2"
+                    output = "0|-4"
                 if direction ==1:
-                    output ="2|0"
+                    output ="4|0"
                 if direction ==2:
-                    output = "0|2"
+                    output = "0|4"
                 if direction ==3:
-                    output = "-2|0"
+                    output = "-4|0"
                 Character.MOVE.change((output).split("|"))
             else:
                 output ="0|0"
